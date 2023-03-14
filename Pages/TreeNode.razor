@@ -1,0 +1,14 @@
+﻿<div class="nav-item px-3">
+    <a class="oi @HasChildsExists tn_control" @onclick="OpenClose"></a>
+    <a class="@NameStyle" href="/@Data.Caption">
+         @Data.Name
+    </a>
+    @if (!Data.IsHidden)
+    {
+        foreach (var chnd in DataProvider.NodeDatas.Where(x => x.ParentId == Data.Id) )
+        {
+            <TreeNode Data="chnd" Parent="this"></TreeNode>
+        }
+    }
+</div>
+

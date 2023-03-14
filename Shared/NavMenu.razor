@@ -1,0 +1,16 @@
+﻿
+@inject DataProvider DataProvider
+
+<div class="nav-scrollable" >
+    <nav class="flex-column">
+        <div >
+            @if (DataProvider.NodeDatas != null)
+            {
+                foreach (var rootNode in DataProvider.NodeDatas.Where(x => x.ParentId is null))
+                {
+                    <TreeNode Data=rootNode></TreeNode>
+                }
+            }
+        </div>
+    </nav>
+</div>

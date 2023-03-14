@@ -1,0 +1,12 @@
+﻿@page "/{*Caption}"
+
+<PageTitle>TreeViewDemo</PageTitle>
+
+<h1>@(Caption ?? "TreeViewDemo")</h1>
+
+
+@code
+{
+    [Parameter]
+    public string Caption { get; set; } = "TreeViewDemo";
+}

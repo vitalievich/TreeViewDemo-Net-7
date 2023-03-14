@@ -1,0 +1,38 @@
+[
+  {
+    "Name": "First",
+    "Id": 0,
+    "ParentId": null,
+    "Caption": "First Root Node"
+  },
+  {
+    "Name": "Second",
+    "Id": 1,
+    "ParentId": null,
+    "Caption": "Second Root Node"
+  },
+  {
+    "Name": "First First",
+    "Id": 2,
+    "ParentId": 0,
+    "Caption": "First First Node"
+  },
+  {
+    "Name": "First First First",
+    "Id": 3,
+    "ParentId": 2,
+    "Caption": "First First First Node"
+  },
+  {
+    "Name": "Second Second",
+    "Id": 4,
+    "ParentId": 1,
+    "Caption": "Second Second Node"
+  },
+  {
+    "Name": "Third",
+    "Id": 5,
+    "ParentId": null,
+    "Caption": "Third Root Node"
+  }
+]
